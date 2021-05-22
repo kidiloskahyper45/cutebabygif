@@ -6,7 +6,7 @@ error_reporting(0);
 set_time_limit(0);
 
 flush();
-$API_KEY = '1418749894:AAE0m448W7tmAHme9g31_TrXLszF_6JZtjA'; //Your token
+$API_KEY = '1884962279:AAEYQbLCJhRCup97haTuKjps9sE6_V6JEK4'; //Your token
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
@@ -58,13 +58,13 @@ $callback_query = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $reply = $update->message->reply_to_message->message_id;
 //===============BENCHAM=============//
-$tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@Cute_baby_gif&user_id=".$from_id))->result->status;
+$tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@HOT_MEMS08&user_id=".$from_id))->result->status;
 if($tch != 'member' && $tch != 'creator' && $tch != 'administrator'){
 bot('sendMessage',['chat_id'=>$from_id,'text'=>"Sorry Dude😔
 
 You need to join my  channel to use me✌️
 
-Join now:- @Cute_baby_gif😋"
+Join now:- @HOT_MEMS08😋"
 ]);
 }Else{
 if ($text == "/start"){
@@ -73,7 +73,7 @@ if ($text == "/start"){
                 'chat_id' =>$chat_id,
                 'text' =>"***HEY $name,
 
-I'm a Random Baby Gif Bot Made By @Cute_baby_gif
+I'm a Random Baby Gif Bot Made By @HOT_MEMS08
 
 Click the button to Get Gif.***
 ",
@@ -91,16 +91,16 @@ Click the button to Get Gif.***
 if ($text == "/gif"){
 bot('copyMessage', [
                 'chat_id' =>$chat_id,
-                'from_chat_id'=>-1001324812174,
-                'message_id'=>rand(25,530)
+                'from_chat_id'=>-1001309456712,
+                'message_id'=>rand(25,94)
                
                ]);
         }    
 if ($callback_query == "get"){
 bot('copyMessage', [
                 'chat_id' =>$chatid,
-                'from_chat_id'=>-1001324812174,
-                'message_id'=>rand(25,530)
+                'from_chat_id'=>-1001309456712,
+                'message_id'=>rand(25,94)
                
                ]);
 bot('DeleteMessage',[
